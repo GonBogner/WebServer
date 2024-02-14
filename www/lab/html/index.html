@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks 2023: LAB</title>
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="mask-icon" href="/favicon.ico" color="#000000">
+    <!-- CSS Styles -->
+    <style>
+        @keyframes moveTitle {
+            0% { left: 0; }
+            50% { left: 20px; } 
+            100% { left: 0; }
+        }
+        h1 {
+            position: relative;
+            animation: moveTitle 2s infinite;
+            color: blue;
+        }
+        h2 {
+            color: red;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px auto;
+        }
+        .image-container img {
+            width: 150px;
+            height: auto;
+            margin: 0 10px;
+        }
+        hr {
+            margin-top: 20px;
+        }
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Computer Networks 2023: LAB</h1>
+    <h2>Gon Bogner & Uri Meir</h2>
+    <div class="image-container">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230426115225/computer-image-660.jpg" alt="Image 1">
+        <img src="https://t3.ftcdn.net/jpg/06/86/08/04/360_F_686080468_k4jWv05U7KC19sjULBJnBrH69LxX8ciC.jpg" alt="Image 2">
+    </div>
+    <p>
+        <a href="https://moodle.runi.ac.il/2024/course/view.php?id=2401572">Course Website</a>
+    </p>
+    <p>
+        <a href="https://twitter.com/home">Favorite Website</a>
+    </p>
+    <hr>
+    <form method="post" action="/params_info.html">
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br><br>
+        <input type="checkbox" id="loveCN" name="loveCN" value="yes">
+        <label for="loveCN">I love Computer Networks</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
